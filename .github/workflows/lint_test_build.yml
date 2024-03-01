@@ -3,8 +3,11 @@ name: PR Checks
 on:
   push:
     branches:
+      - '!main'
       - '!release'
   pull_request:
+    branches:
+        - '!release'
     types:
       - opened
       - synchronize
