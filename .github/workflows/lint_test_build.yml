@@ -137,7 +137,6 @@ jobs:
 
   all_pr_checks_passed:
     runs-on: ubuntu-22.04
-    needs:
-      - build-docker
+    needs: build-docker
     steps:
       - run: echo 'PR Checks Passed'
